@@ -1,75 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech TLDR Blog</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      body { font-family: 'Georgia', serif; }
-    </style>
-    </script>
-</head>
-<body class="bg-slate-50 text-slate-800">
-    <div class="min-h-screen px-4 py-8 md:px-8">
-        <div class="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[220px_1fr]">
-            <aside class="rounded-xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-                <h2 class="mb-4 text-xl text-slate-900">Tech Companies</h2>
-                <ul class="space-y-3">
-                    <li class="flex items-center text-slate-700"><i class="fab fa-apple mr-3 text-blue-500"></i>Apple</li>
-                    <li class="flex items-center text-slate-700"><i class="fab fa-google mr-3 text-blue-500"></i>Google</li>
-                    <li class="flex items-center text-slate-700"><i class="fab fa-microsoft mr-3 text-blue-500"></i>Microsoft</li>
-                    <li class="flex items-center text-slate-700"><i class="fab fa-amazon mr-3 text-blue-500"></i>Amazon</li>
-                    <li class="flex items-center text-slate-700"><i class="fab fa-facebook mr-3 text-blue-500"></i>Meta</li>
-                    <li class="flex items-center text-slate-700"><i class="fab fa-twitter mr-3 text-blue-500"></i>Twitter</li>
-                    <li class="flex items-center text-slate-700"><i class="fab fa-spotify mr-3 text-blue-500"></i>Spotify</li>
-                </ul>
-            </aside>
-            <main>
-                <h1 class="text-center text-3xl text-slate-900 md:text-left md:text-4xl">Tech TLDR Blog Posts</h1>
-                <div id="posts" class="mt-5 space-y-4"></div>
-            </main>
-        </div>
-    </div>
-
-    <script>
-        fetch('content/grab-content.txt')
-            .then(response => response.text())
-            .then(data => {
-                const lines = data.trim().split('\n');
-                const postsContainer = document.getElementById('posts');
-                lines.forEach((line, idx) => {
-                    const [title, content, url, imgurl, date] = line.split(';');
-                    const postDiv = document.createElement('div');
-                    postDiv.className = 'flex items-center bg-white p-5 rounded-xl shadow-sm ring-1 ring-slate-200 transition hover:shadow-md';
-
-                    const summary = content || 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.';
-
-                    if (idx === 0) {
-                        postDiv.innerHTML = `
-                            <img src="${imgurl}" alt="${title}" class="h-24 w-44 flex-none rounded-lg object-cover">
-                            <div class="ml-5 w-full">
-                                <span class="inline-block rounded-full bg-green-600 px-3 py-0.5 text-xs text-white float-right">New</span>
-                                <h2 class="text-xl  text-slate-900"><a href="${url}" target="_blank" class="text-slate-900 hover:text-blue-600">${title}</a></h2>
-                                <p class="text-sm text-slate-500 mt-1">${date}</p>
-                                <p class="mt-2 text-sm text-slate-600">${summary}</p>
-                            </div>
-                        `;
-                    } else {
-                        postDiv.innerHTML = `
-                            <img src="${imgurl}" alt="${title}" class="h-24 w-44 flex-none rounded-lg object-cover">
-                            <div class="ml-5 w-full">
-                                <h2 class="text-xl  text-slate-900"><a href="${url}" target="_blank" class="text-slate-900 hover:text-blue-600">${title}</a></h2>
-                                <p class="text-sm text-slate-500 mt-1">${date}</p>
-                                <p class="mt-2 text-sm text-slate-600">${summary}</p>
-                            </div>
-                        `;
-                    }
-                    postsContainer.appendChild(postDiv);
-                });
-            })
-            .catch(error => console.error('Error loading content:', error));
-    </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech TLDR - Modern Tech News</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

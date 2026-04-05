@@ -16,7 +16,7 @@ async function main() {
     let content = $lp.find('.post-content').text().substring(0, 100).trim() + "...";
     let url = $lp.find('.post-title').attr('href');
     let date = $lp.find('.post-date').text().trim();
-    fs.appendFileSync('content/grab-content.txt',title + ";" + content + ";" + baseUrl + url + ";" + baseUrl + imgSrc + ";" + date + "\n");
+    fs.appendFileSync('public/content/grab-content.txt',title + ";" + content + ";" + baseUrl + url + ";" + baseUrl + imgSrc + ";" + date + "\n");
 
     let postList = $('.post-list').find('li');
 
@@ -28,7 +28,7 @@ async function main() {
         let url = $li.find('.post-title-small').attr('href');
         let date = $li.find('.post-date').text().trim();
 
-        fs.appendFileSync('content/grab-content.txt',title + ";" + content + ";" + baseUrl + url + ";" + baseUrl + imgSrc + ";" + date + "\n");
+        fs.appendFileSync('public/content/grab-content.txt',title + ";" + content + ";" + baseUrl + url + ";" + baseUrl + imgSrc + ";" + date + "\n");
     }
 
     let maxPage = 100;
@@ -46,7 +46,7 @@ async function main() {
             let url = $li.find('.post-title-small').attr('href');
             let date = $li.find('.post-date').text().trim();
 
-            fs.appendFileSync('content/grab-content.txt',title + ";" + content + ";" + baseUrl + url + ";" + baseUrl + imgSrc + ";" + date + "\n");
+            fs.appendFileSync('public/content/grab-content.txt',title + ";" + content + ";" + baseUrl + url + ";" + baseUrl + imgSrc + ";" + date + "\n");
         }
         page++;
     }   

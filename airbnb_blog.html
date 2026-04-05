@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+
+		<title>Blog | Airbnb Engineering &amp; Data Science</title>
+		<link rel="apple-touch-icon" href="https://a0.muscache.com/airbnb/static/icons/apple-touch-icon-76x76-3b313d93b1b5823293524b9764352ac9.png"/>
+		<link rel="apple-touch-icon" sizes="76x76" href="https://a0.muscache.com/airbnb/static/icons/apple-touch-icon-76x76-3b313d93b1b5823293524b9764352ac9.png"/>
+		<link rel="apple-touch-icon" sizes="120x120" href="https://a0.muscache.com/airbnb/static/icons/apple-touch-icon-120x120-52b1adb4fe3a8f825fc4b143de12ea4b.png"/>
+		<link rel="apple-touch-icon" sizes="152x152" href="https://a0.muscache.com/airbnb/static/icons/apple-touch-icon-152x152-7b7c6444b63d8b6ebad9dae7169e5ed6.png"/>
+		<link rel="apple-touch-icon" sizes="180x180" href="https://a0.muscache.com/airbnb/static/icons/apple-touch-icon-180x180-bcbe0e3960cd084eb8eaf1353cf3c730.png"/>
+		<link rel="icon" sizes="192x192" href="https://a0.muscache.com/airbnb/static/icons/android-icon-192x192-c0465f9f0380893768972a31a614b670.png"/>
+		<link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico"/>
+		<link rel="mask-icon" href="https://a0.muscache.com/airbnb/static/icons/airbnb-0611901eac33ccfa5e93d793a2e21f09.svg" color="#FF5A5F"/>
+
+	<script src="https://cmp.osano.com/16CVBaUTYtcu336kV/7259e193-ad95-4ba2-96e6-5b1963dcdea6/osano.js"></script>
+	<meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel='dns-prefetch' href='//stats.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="Airbnb Engineering &amp; Data Science &raquo; Feed" href="https://airbnb.tech/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Airbnb Engineering &amp; Data Science &raquo; Comments Feed" href="https://airbnb.tech/comments/feed/" />
+<link rel='stylesheet' id='all-css-0' href='https://airbnb.tech/_static/??-eJyNy0EKgCAQheELZUMR2iY6i+kQU6OFY4S3r01Qu5Y/731w7oqi48OjgBMBT5Jh4s2timlKNhWQXBjrQLG+DxW8xSIQ0JNFxoAxf2JnWzApxtm68o/f27sfNIahMabTre5NewGHyEGz' type='text/css' media='all' />
+<style id='jetpack-sharing-buttons-style-inline-css'>
+.jetpack-sharing-buttons__services-list{display:flex;flex-direction:row;flex-wrap:wrap;gap:0;list-style-type:none;margin:5px;padding:0}.jetpack-sharing-buttons__services-list.has-small-icon-size{font-size:12px}.jetpack-sharing-buttons__services-list.has-normal-icon-size{font-size:16px}.jetpack-sharing-buttons__services-list.has-large-icon-size{font-size:24px}.jetpack-sharing-buttons__services-list.has-huge-icon-size{font-size:36px}@media print{.jetpack-sharing-buttons__services-list{display:none!important}}.editor-styles-wrapper .wp-block-jetpack-sharing-buttons{gap:0;padding-inline-start:0}ul.jetpack-sharing-buttons__services-list.has-background{padding:1.25em 2.375em}
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='all-css-6' href='https://airbnb.tech/wp-content/themes/airbnbtech/css/styles.css?m=1774292111g' type='text/css' media='all' />
+<script type="text/javascript" src="https://airbnb.tech/_static/??-eJzTLy/QzcxLzilNSS3WzwKiwtLUokoopZebmaeXVayjj0+Rbm5melFiSSpUsX2uraG5uYmZkZmFuVEWAK+2Iio=" ></script><link rel="canonical" href="https://airbnb.tech/blog/" />
+<link rel='shortlink' href='https://airbnb.tech/?p=5' />
+	<style>img#wpstats{display:none}</style>
+		
+	</head>
+	<body class="page-template page-template-template-blog page-template-template-blog-php page page-id-5">
+
+		<a href="#main" class="skip-to-content hide">Skip to main content</a>
+
+		<!-- UNIVERSAL HEADER -->
+		<header id="univ-header">
+
+			<!-- MAX -->
+			<div class="max">
+
+				<!-- LOGO -->
+				<a href="https://airbnb.tech/">
+					<div class="logo"><span>Airbnb Engineering &amp; Data Science</span><svg class="icon" fill="none" height="32" viewBox="0 0 83 32" width="83" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a"><path d="m0 0h82.4371v32h-82.4371z"/></clipPath><g clip-path="url(#a)" fill="#222"><path d="m27.6857 25.8688c-.2389 1.6678-1.3563 3.0972-2.9163 3.7301-.7654.3108-1.6021.4201-2.4525.3215-.8138-.0945-1.6149-.3687-2.4487-.838-1.1544-.6499-2.323-1.6477-3.6379-3.1112 2.0933-2.5866 3.4005-4.9707 3.8845-7.0942.2215-.9708.2684-1.8891.1392-2.7295-.1246-.8112-.4105-1.5474-.8498-2.1883-.9792-1.4286-2.6671-2.2815-4.5157-2.2815-1.8476 0-3.5353.8527-4.5145 2.2811-.43929.6409-.7252 1.377-.84983 2.1876-.12926.8396-.08259 1.7575.13843 2.7285.4838 2.1243 1.791 4.5091 3.885 7.0964-1.315 1.4634-2.4836 2.4612-3.63797 3.1111-.83371.4693-1.63467.7435-2.44858.838-.85005.0986-1.68724-.0107-2.4527-.3215-1.55998-.6329-2.6774-2.0623-2.91601-3.7301-.11672-.8151-.02665-1.6013.28349-2.4742.1142-.3218.24788-.6376.41349-1.0128.23429-.5309.48302-1.0703.72352-1.592l.03235-.0701c2.20186-4.7778 4.56532-9.6215 7.02491-14.39675l.0977-.19008c.2504-.48682.5094-.99017.7706-1.47656.2711-.50419.544-.99164.9024-1.41185.6699-.78522 1.5511-1.20028 2.5482-1.20028.9968 0 1.8777.41485 2.5475 1.19985.3589.42033.6318.90756.9024 1.41133.2588.48207.5156.9809.7638 1.46318l.1052.20462c2.4593 4.77464 4.8228 9.61844 7.0249 14.39694l.0198.043c.2448.5304.4977 1.0788.7359 1.6188.166.3759.2998.6919.4138 1.0125.31.8733.3999 1.6596.2834 2.4744zm-12.7967-1.4918c-1.7322-2.2001-2.8437-4.2433-3.2337-5.9561-.1637-.7189-.2011-1.3795-.1112-1.9635.0777-.5052.2511-.9569.5155-1.3427.5979-.8721 1.6555-1.3928 2.8296-1.3928 1.1737 0 2.2313.5209 2.8294 1.3933.2643.3856.4377.8375.5154 1.3427.0898.5848.0522 1.2457-.1117 1.9644-.3904 1.7126-1.5016 3.7551-3.2333 5.9547zm14.4391-1.667c-.1433-.4027-.3105-.7925-.4698-1.1536-.245-.5553-.5017-1.1118-.7499-1.6497l-.0197-.0427c-2.2143-4.8051-4.5911-9.6759-7.064-14.47695l-.1049-.20389c-.2522-.49028-.5131-.99722-.7806-1.49531-.3125-.58164-.6587-1.19753-1.1484-1.77117-1.0548-1.235988-2.5114-1.91668-4.1018-1.91668-1.5908 0-3.0478.681008-4.103 1.91774-.489.57353-.83507 1.1891-1.14774 1.77085-.2699.50251-.53316 1.01419-.78768 1.50901l-.09745.18935c-2.47302 4.80155-4.84966 9.67225-7.06395 14.47695l-.03224.0699c-.24398.5291-.49629 1.0764-.737217 1.6224-.159285.3608-.326366.7503-.469744 1.154-.419387 1.1806-.5439075 2.3085-.3807246 3.4483.3413256 2.385 1.9394456 4.4291 4.1705956 5.3347.82855.3362 1.70831.5068 2.61461.5068.27875 0 .56224-.0165.84236-.0491 1.07359-.1248 2.1553-.4905 3.21518-1.0871 1.2968-.73 2.5778-1.8 3.977-3.329 1.3992 1.529 2.68 2.599 3.9768 3.329 1.0601.5967 2.1419.9624 3.2152 1.0871.2803.0326.5636.0491.8425.0491.9062 0 1.7858-.1706 2.6143-.5068 2.2311-.9054 3.8294-2.9495 4.171-5.3347.163-1.1393.0385-2.2673-.3807-3.4485z"/><path d="m45.5102 22.2517c.5042 0 .9743-.0641 1.4103-.1922s.8312-.3 1.1855-.5157l-.511-2.1236c-.2453.1079-.5008.1955-.7665.2629s-.5144.1011-.746.1011c-.4497 0-.7835-.1382-1.0015-.4146s-.327-.6708-.327-1.1831v-4.6315h2.9432v-2.2854h-2.9432v-3.64045h-2.8615v3.64045h-1.8395v2.2854h1.8395v4.9753c0 .7955.1465 1.4697.4394 2.0225.293.5528.7086.9741 1.2468 1.264s1.1821.4349 1.9315.4349zm8.9347.2119c.7321 0 1.4236-.1197 2.0744-.3589.6508-.2393 1.2203-.5777 1.7084-1.0152s.8542-.9639 1.0983-1.5791l-2.5423-.8204c-.2576.4375-.5864.7725-.9864 1.0049-.3999.2325-.844.3487-1.3321.3487-.705 0-1.2881-.229-1.7491-.687-.4609-.4581-.7525-1.0904-.8745-1.8971h7.7081v-.7178c0-.8613-.1254-1.6406-.3763-2.3379-.2508-.6973-.6067-1.2989-1.0677-1.8048s-1.0135-.8955-1.6576-1.169c-.644-.2734-1.3592-.4101-2.1456-.4101-.7593 0-1.4643.1435-2.1151.4307-.6509.2871-1.2169.687-1.6983 1.1997-.4813.5127-.8575 1.1177-1.1287 1.815s-.4068 1.4493-.4068 2.2559c0 .834.1356 1.6031.4068 2.3072s.6508 1.3126 1.1389 1.8253 1.0678.9092 1.7389 1.1895c.6712.2802 1.4067.4204 2.2067.4204zm2.1379-6.9934h-4.6623c.1334-.7215.4102-1.2904.8304-1.7067s.9371-.6244 1.5508-.6244c.6003 0 1.1038.2081 1.5107.6244s.6637.9852.7704 1.7067zm9.666 6.9934c.7919 0 1.5293-.1436 2.212-.4307s1.2664-.6973 1.7511-1.2305c.4848-.5332.8159-1.1621.9934-1.8868l-2.724-.5332c-.1912.4785-.4848.8477-.8807 1.1075-.396.2597-.8398.3896-1.3313.3896-.4916 0-.9285-.1333-1.3109-.3999-.3823-.2666-.6793-.6323-.8909-1.0972s-.3175-.9981-.3175-1.5997c0-.6015.1093-1.145.3277-1.6304.2185-.4853.5155-.8647.891-1.1382.3755-.2734.809-.4102 1.3006-.4102.4642 0 .8807.1333 1.2493.4.3687.2666.6554.6323.8603 1.0972l2.724-.5333c-.1775-.7109-.495-1.333-.9524-1.8662-.4574-.5333-1.0138-.9468-1.6692-1.2408-.6554-.2939-1.3723-.4409-2.1506-.4409s-1.502.147-2.171.4409c-.6691.294-1.2528.7041-1.7512 1.2305s-.8875 1.1416-1.1674 1.8458c-.28.7041-.4199 1.4663-.4199 2.2867 0 .8066.1365 1.5552.4096 2.2456.2731.6905.652 1.2886 1.1367 1.7945.4848.5059 1.0583.899 1.7205 1.1793.6622.2802 1.3825.4204 2.1608.4204zm9.2714-.4239v-6.1974c0-.4499.0944-.8522.2832-1.2067.1887-.3545.4449-.6307.7685-.8284s.7011-.2966 1.1326-.2966c.5932 0 1.0584.2148 1.3955.6443.3371.4296.5056 1.0193.5056 1.7693v6.1155h2.8315v-6.4837c0-.9409-.1618-1.759-.4854-2.4544s-.7787-1.2306-1.3652-1.6056-1.2708-.5625-2.0528-.5625c-.6607 0-1.2472.133-1.7596.3989-.5123.2659-.9303.6306-1.2539 1.0942v-5.64514h-2.8315v15.25824z"/></g></svg></div>				</a>
+				<!-- /LOGO -->
+
+				<!-- MAIN NAV -->
+				<nav>
+
+					<!-- BURGER -->
+					<div aria-hidden="true" id="burger">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<!-- /BURGER -->
+
+					<!-- LINKS -->
+					<div id="main-links">
+						<ul id="menu-main-menu" class="menu"><li id="nav-blog" class="current-menu-item"><a href="https://airbnb.tech/blog/" aria-current="page">Blog</a></li>
+<li id="nav-events"><a href="https://airbnb.tech/events/">Events</a></li>
+<li id="nav-opensource"><a href="https://airbnb.tech/open-source/">Open Source</a></li>
+<li id="nav-research"><a href="https://airbnb.tech/tech_research/">Research</a></li>
+<li id="nav-careers"><a href="https://careers.airbnb.com/">Careers</a></li>
+</ul>					</div>
+					<!-- /LINKS -->
+
+				</nav>
+				<!-- /MAIN NAV -->
+
+			</div>
+			<!-- /MAX -->
+
+		</header>
+		<!-- /UNIVERSAL HEADER -->
+
+	<main id="main" class="blog" role="main">
+
+		
+			<!-- HERO -->
+			<section id="hero">
+				<div>
+					<h1><span>Tech Blog</span></h1>
+					<p>Learn about the people, ideas, and technology at the heart of Airbnb</p>				</div>
+				<div>
+					<div class="featured-img" style="background-image: url(https://airbnb.tech/wp-content/uploads/sites/19/2023/05/blog.jpg);" role="img" alt=""></div>				</div>
+			</section>
+			<!-- /HERO -->
+
+			<!-- FILTER -->
+			<section id="filter">
+
+				<div class="categories">
+					<h2>Filter by:</h2>
+					<button class="js-filter-item current">All</button>
+													<button class="js-filter-item" data-category="5" data-type="post" href="https://airbnb.tech/category/ai-ml/">AI/ML</button>
+															<button class="js-filter-item" data-category="6" data-type="post" href="https://airbnb.tech/category/data/">Data</button>
+															<button class="js-filter-item" data-category="2" data-type="post" href="https://airbnb.tech/category/infrastructure/">Infrastructure</button>
+															<button class="js-filter-item" data-category="3" data-type="post" href="https://airbnb.tech/category/mobile/">Mobile</button>
+															<button class="js-filter-item" data-category="7" data-type="post" href="https://airbnb.tech/category/open-source/">Open Source</button>
+															<button class="js-filter-item" data-category="10" data-type="post" href="https://airbnb.tech/category/payments/">Payments</button>
+															<button class="js-filter-item" data-category="8" data-type="post" href="https://airbnb.tech/category/people/">People</button>
+															<button class="js-filter-item" data-category="4" data-type="post" href="https://airbnb.tech/category/web/">Web</button>
+											</div>
+
+			</section>
+			<!-- /FILTER -->
+
+			<!-- ARTICLES -->
+			<section class="articles" id="recent-articles">
+
+				<div id="js-filter" class="article-list">
+													<article>
+									<div class="copy">
+										<h3><span>My Journey to Airbnb — Jonathan Woodard</span></h3>
+										<p>
+											From defensive end to cloud security engineer, meet Jonathan Woodard. 										</p>
+										<a href="https://medium.com/airbnb-engineering/my-journey-to-airbnb-jonathan-woodard-7efae28d7fa9" target="_blank">Visit Link</a>									</div>
+									<span class="cat">People </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2026/04/1tvm81QJzJmsOHuiGKuPGSQ.png" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>What COVID did to our forecasting models (and what we...</span></h3>
+										<p>
+											How Airbnb built forecasting models resilient enough to survive a global pandemic and whatever shock comes...										</p>
+										<a href="https://medium.com/airbnb-engineering/what-covid-did-to-our-forecasting-models-and-what-we-built-to-handle-the-next-shock-ccbf0e1f7fa9" target="_blank">Visit Link</a>									</div>
+									<span class="cat">Data </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2026/03/1qHIbHI4SSjl46Edjf9Me4g.jpg" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>From vendors to vanguard: Airbnb’s hard-won lessons in observability ownership</span></h3>
+										<p>
+											How a complex, large-scale migration to an in-house observability platform led to superior tooling, consistent data,...										</p>
+										<a href="https://medium.com/airbnb-engineering/from-vendors-to-vanguard-airbnbs-hard-won-lessons-in-observability-ownership-3811bf6c1ac3" target="_blank">Visit Link</a>									</div>
+									<span class="cat">Infrastructure </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2026/03/Migrating-birds.jpeg" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>Recommending Travel Destinations to Help Users Explore</span></h3>
+										<p>
+											How we built a destination recommendation model that helps users spark inspiration and narrow down choices...										</p>
+										<a href="https://medium.com/airbnb-engineering/recommending-travel-destinations-to-help-users-explore-5fa7a81654fb" target="_blank">Visit Link</a>									</div>
+									<span class="cat">AI/ML </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2026/03/1GmYX3GemYdlNvs2tOLlFbQ.jpg" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>It Wasn’t a Culture Problem: Upleveling Alert Development at Airbnb</span></h3>
+										<p>
+											How we changed our Observability as Code alert review process and cut development cycles from weeks...										</p>
+										<a href="https://medium.com/airbnb-engineering/it-wasnt-a-culture-problem-upleveling-alert-development-at-airbnb-01e2290eb0f5" target="_blank">Visit Link</a>									</div>
+									<span class="cat">Infrastructure </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2026/03/Screenshot-2026-03-04-at-10.49.44 AM.png" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>Improving Search Ranking for Maps</span></h3>
+										<p>
+											How Airbnb is adapting ranking for our map interface.										</p>
+										<a href="https://medium.com/airbnb-engineering/improving-search-ranking-for-maps-13b03f2c2cca" target="_blank">Visit Link</a>									</div>
+									<span class="cat">AI/ML </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2026/02/0DO7m1JZFPSvVRlBG.jpg" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>Building a Next-Generation Key-Value Store at Airbnb</span></h3>
+										<p>
+											How we completely rearchitected Mussel, our storage engine for derived data, and lessons learned from the...										</p>
+										<a href="https://medium.com/airbnb-engineering/building-a-next-generation-key-value-store-at-airbnb-0de8465ba354" target="_blank">Visit Link</a>									</div>
+									<span class="cat">Infrastructure </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2026/02/1sUS0d9nGKa-WQupVS8Wb4g.jpg" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>From Static Rate Limiting to Adaptive Traffic Management in Airbnb’s...</span></h3>
+										<p>
+											How Airbnb hardened Mussel, our key-value store, with smarter traffic controls to stay fast and reliable...										</p>
+										<a href="https://medium.com/airbnb-engineering/from-static-rate-limiting-to-adaptive-traffic-management-in-airbnbs-key-value-store-29362764e5c2" target="_blank">Visit Link</a>									</div>
+									<span class="cat">Infrastructure </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2026/02/1kBx_8QLd7El4TZ2nrouYUw.jpg" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>Pay as a Local</span></h3>
+										<p>
+											How Airbnb rolled out 20+ locally relevant payment methods worldwide in just 14 months										</p>
+										<a href="https://medium.com/airbnb-engineering/pay-as-a-local-bef469b72f32" target="_blank">Visit Link</a>									</div>
+									<span class="cat">Payments </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2026/02/16K6D4WxFwqlwdtBc6uzczw.jpg" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>Academic Publications &amp; Airbnb Tech: 2025 Year in Review</span></h3>
+										<p>
+											2025 was a big year for research at Airbnb, as we made significant progress toward our...										</p>
+										<a href="https://medium.com/airbnb-engineering/academic-publications-airbnb-tech-2025-year-in-review-7d79f57d3b52" target="_blank">Visit Link</a>									</div>
+									<span class="cat">AI/ML Data Infrastructure </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2026/02/1FfdFpfjGZODh7ltZ2W2Mrg.jpg" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>Safeguarding Dynamic Configuration Changes at Scale</span></h3>
+										<p>
+											How Airbnb ships dynamic config changes safely and reliably										</p>
+										<a href="https://medium.com/airbnb-engineering/safeguarding-dynamic-configuration-changes-at-scale-5aca5222ed68" target="_blank">Visit Link</a>									</div>
+									<span class="cat">Infrastructure </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2026/02/1v2VDklQn1NHAx-MiR8DYMQ.png" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>My Journey to Airbnb — Anna Sulkina</span></h3>
+										<p>
+											Anna Sulkina has always been a traveler, and we’re lucky her travels have brought her to...										</p>
+										<a href="https://medium.com/airbnb-engineering/my-journey-to-airbnb-anna-sulkina-85216183d094" target="_blank">Visit Link</a>									</div>
+									<span class="cat">Infrastructure People </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2026/02/image.png" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>My Journey to Airbnb: Peter Coles</span></h3>
+										<p>
+											The story of Airbnb’s Head Economist for Policy and Director of Data Science involves geology, co-teaching...										</p>
+										<a href="https://medium.com/airbnb-engineering/my-journey-to-airbnb-peter-coles-0e8efd01c5a8" target="_blank">Visit Link</a>									</div>
+									<span class="cat">People </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2026/01/image.jpeg" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>Code of conduct</span></h3>
+										<p>
+											Airbnb&#039;s Code of conduct for Open Source. 										</p>
+										<a href="https://airbnb.tech/open-source/code-of-conduct/">Read more</a>									</div>
+									<span class="cat">Open Source </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2026/01/2-stock-photo-barcelona-el-born-by-tadeudreyer-144349139_HR1.jpg" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>GraphQL Data Mocking at Scale with LLMs and @generateMock</span></h3>
+										<p>
+											How Airbnb combines GraphQL infra, product context, and LLMs to generate and maintain convincing, type-safe mock...										</p>
+										<a href="https://medium.com/airbnb-engineering/graphql-data-mocking-at-scale-with-llms-and-generatemock-30b380f12bd6" target="_blank">Visit Link</a>									</div>
+									<span class="cat">Infrastructure </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2025/11/image.png" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>Viaduct, Five Years On: Modernizing the Data-Oriented Service Mesh</span></h3>
+										<p>
+											A more powerful engine and a simpler API for our data-oriented mesh										</p>
+										<a href="https://medium.com/airbnb-engineering/viaduct-five-years-on-modernizing-the-data-oriented-service-mesh-e66397c9e9a9" target="_blank">Visit Link</a>									</div>
+									<span class="cat">Data Infrastructure Open Source </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2025/09/image.png" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>Migrating Airbnb’s JVM Monorepo to Bazel</span></h3>
+										<p>
+											How we completed migrating our largest repo, the JVM monorepo, to Bazel.										</p>
+										<a href="https://medium.com/airbnb-engineering/migrating-airbnbs-jvm-monorepo-to-bazel-33f90eda51ec" target="_blank">Visit Link</a>									</div>
+									<span class="cat">Infrastructure </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2025/09/1rSkIrKYhc8Bwcv2xLE1mxA.jpg" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>Seamless Istio Upgrades at Scale</span></h3>
+										<p>
+											How Airbnb upgrades tens of thousands of pods on dozens of Kubernetes clusters to new Istio...										</p>
+										<a href="https://medium.com/airbnb-engineering/seamless-istio-upgrades-at-scale-bcb0e49c5cf8" target="_blank">Visit Link</a>									</div>
+									<span class="cat">Infrastructure </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2025/08/Screenshot-2025-08-11-at-9.44.03 AM.png" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>Achieving High Availability with distributed database on Kubernetes at Airbnb</span></h3>
+										<p>
+											How to achieve high availability with distributed database on Kubernetes. 										</p>
+										<a href="https://medium.com/airbnb-engineering/achieving-high-availability-with-distributed-database-on-kubernetes-at-airbnb-58cc2e9856f4" target="_blank">Visit Link</a>									</div>
+									<span class="cat">Infrastructure </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2025/08/Screenshot-2025-08-11-at-9.41.05 AM.png" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>Understanding and Improving SwiftUI Performance</span></h3>
+										<p>
+											New techniques we’re using at Airbnb to improve and maintain performance of SwiftUI features at scale										</p>
+										<a href="https://medium.com/airbnb-engineering/understanding-and-improving-swiftui-performance-37b77ac61896" target="_blank">Visit Link</a>									</div>
+									<span class="cat">Mobile Web </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2025/08/Screenshot-2025-08-11-at-9.38.05 AM.png" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>Load Testing with Impulse at Airbnb</span></h3>
+										<p>
+											Comprehensive Load Testing with Load Generator, Dependency Mocker, Traffic Collector, and More										</p>
+										<a href="https://medium.com/airbnb-engineering/load-testing-with-impulse-at-airbnb-f466874d03d2" target="_blank">Visit Link</a>									</div>
+									<span class="cat">Infrastructure </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2025/01/Screenshot-2025-01-13-at-11.45.40 AM-1.png" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>Listening, Learning, and Helping at Scale: How Machine Learning Transforms...</span></h3>
+										<p>
+											A look into how Airbnb uses speech recognition, intent detection, and language models to understand users...										</p>
+										<a href="https://medium.com/airbnb-engineering/listening-learning-and-helping-at-scale-how-machine-learning-transforms-airbnbs-voice-support-b71f912d4760" target="_blank">Visit Link</a>									</div>
+									<span class="cat">AI/ML </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2025/06/14883818_Airbnb_Breckenridge_MBKoeth__G8A0372_FRET.jpg" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>Accelerating Large-Scale Test Migration with LLMs</span></h3>
+										<p>
+											How Airbnb migrated nearly 3.5K Enzyme test files to React Testing Library in just 6 weeks...										</p>
+										<a href="https://medium.com/airbnb-engineering/accelerating-large-scale-test-migration-with-llms-9565c208023b" target="_blank">Visit Link</a>									</div>
+									<span class="cat">AI/ML Infrastructure </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2025/04/1j0QXnA13Sy5ruaIAU5C_eg.jpg" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>Embedding-Based Retrieval for Airbnb Search</span></h3>
+										<p>
+											Our journey in applying embedding-based retrieval techniques to build an accurate and scalable candidate retrieval system...										</p>
+										<a href="https://medium.com/airbnb-engineering/embedding-based-retrieval-for-airbnb-search-aabebfc85839" target="_blank">Visit Link</a>									</div>
+									<span class="cat">AI/ML </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2025/04/image.png" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>How Airbnb Measures Listing Lifetime Value</span></h3>
+										<p>
+											A deep dive on the framework that lets us identify the most valuable listings for our...										</p>
+										<a href="https://medium.com/airbnb-engineering/how-airbnb-measures-listing-lifetime-value-a603bf05142c" target="_blank">Visit Link</a>									</div>
+									<span class="cat">AI/ML Data </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2025/04/0JSoY6CDkTMQEFXgP.jpg" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>My Journey to Airbnb — Michael Kinoti</span></h3>
+										<p>
+											Saying no to med school and following a dream all the way to Silicon Valley										</p>
+										<a href="https://airbnb.tech/people/my-journey-to-airbnb-michael-kinoti/">Read more</a>									</div>
+									<span class="cat">People </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2025/01/Screenshot-2025-01-13-at-11.43.59 AM.png" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>My Journey to Airbnb — Veerabahu Chandran</span></h3>
+										<p>
+											Learning and growing in Airbnb’s new Bangalore Tech Center										</p>
+										<a href="https://airbnb.tech/people/my-journey-to-airbnb-veerabahu-chandran/">Read more</a>									</div>
+									<span class="cat">People </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2025/01/Screenshot-2025-01-09-at-12.27.24 AM.png" alt="" />
+																	</article>
+															<article>
+									<div class="copy">
+										<h3><span>My Journey to Airbnb — Florian Andes</span></h3>
+										<p>
+											From building airplanes to Staff Technical Program Manager at Airbnb										</p>
+										<a href="https://airbnb.tech/people/my-journey-to-airbnb-florian-andes/">Read more</a>									</div>
+									<span class="cat">People </span>
+																			<img src="https://airbnb.tech/wp-content/uploads/sites/19/2023/05/0gHm8C-tJ3j2bavkT.jpg" alt="" />
+																	</article>
+											</div>
+
+			</section>
+			<!-- /ARTICLES -->
+
+				
+	</main>
+
+		<!-- UNIVERSAL FOOTER -->
+		<footer id="univ-footer">
+
+			<!-- MAX -->
+			<div class="max">
+
+				<!-- COPY -->
+				<div>
+					<a href="https://www.airbnb.com/">&copy; Airbnb, Inc.</a>
+				</div>
+				<!-- /COPY -->
+
+				<!-- FOOTER NAV -->
+				<nav class="footer-nav">
+					<a href="https://www.airbnb.com/terms/privacy_policy">Privacy</a>
+					<a href="https://www.airbnb.com/terms">Terms</a>
+					<a href="#" class="osano_showDrawer">Cookie Preferences</a>
+					<a href="#" class="osano_showOptOut">Your Privacy Choices</a>
+				</nav>
+				<!-- /FOOTER NAV -->
+
+				<!-- SOCIAL -->
+				<div class="social">
+					<a href="/feed/" class="rss">RSS</a>
+					<a href="https://x.com/AirbnbEng" class="twitter">
+						<span>X</span>
+						<svg class="icon" width="1200" height="1227" viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="white"/>
+</svg>
+					</a>
+					<a href="https://github.com/airbnb" class="github">
+						<span>Github</span>
+						<svg class="icon" height="33" viewBox="0 0 33 33" width="33" xmlns="http://www.w3.org/2000/svg">
+							<path d="m152.608 55.455c-8.994 0-16.288 7.293-16.288 16.29 0 7.197 4.667 13.302 11.14 15.456.815.15 1.112-.353 1.112-.785 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.882-1.809-2.383-1.809-2.383-1.479-1.01.112-.99.112-.99 1.635.115 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.353.148-1.052.569-1.77 1.034-2.177-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.233 1.677-4.371-.168-.412-.727-2.069.16-4.311 0 0 1.367-.438 4.479 1.67 1.299-.362 2.693-.542 4.078-.549 1.384.007 2.777.187 4.078.549 3.11-2.108 4.475-1.67 4.475-1.67.889 2.242.33 3.899.163 4.311 1.044 1.138 1.674 2.593 1.674 4.371 0 6.258-3.809 7.635-7.437 8.038.584.503 1.105 1.497 1.105 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.294.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455 0-8.997-7.294-16.29-16.291-16.29" fill="#717171" fill-rule="evenodd" transform="translate(-136 -55)"/>
+						</svg>
+					</a>
+				</div>
+				<!-- /SOCIAL -->
+
+			</div>
+			<!-- /MAX -->
+
+		</footer>
+		<!-- /UNIVERSAL FOOTER -->
+
+		<script type="text/javascript" id="sitescripts-js-extra">
+/* <![CDATA[ */
+var wp_ajax = {"ajax_url":"https:\/\/airbnb.tech\/wp-admin\/admin-ajax.php","nonce":"4fa63b9fe1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://airbnb.tech/wp-content/themes/airbnbtech/js/site-scripts.js?m=1774292111g" ></script><script type="text/javascript" id="jetpack-stats-js-before">
+/* <![CDATA[ */
+_stq = window._stq || [];
+_stq.push([ "view", {"v":"ext","blog":"218073944","post":"5","tz":"0","srv":"airbnb.tech","hp":"vip","j":"1:15.4"} ]);
+_stq.push([ "clickTrackerInit", "218073944", "5" ]);
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://stats.wp.com/e-202614.js" id="jetpack-stats-js" defer="defer" data-wp-strategy="defer"></script>
+
+	</body>
+</html>
